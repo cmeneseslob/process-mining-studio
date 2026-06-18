@@ -1,0 +1,30 @@
+# Process Mining Studio — Dependencies
+# Install with: pip install -r requirements.txt
+#
+# NOTE: graphviz also requires the system binary.
+#   macOS  : brew install graphviz
+#   Ubuntu : sudo apt-get install graphviz
+#   Windows: choco install graphviz  (or download from https://graphviz.org/download/)
+
+# Core process mining
+pm4py>=2.7.11,<3.0.0
+
+# Web framework
+streamlit>=1.35.0,<2.0.0
+
+# Data manipulation
+pandas>=2.1.0,<3.0.0
+numpy>=1.26.0,<2.0.0
+
+# Interactive visualizations
+plotly>=5.20.0,<6.0.0
+
+# Graphviz Python bindings (system graphviz binary also required — see above)
+graphviz>=0.20.1,<1.0.0
+
+# Datetime / timezone support (used by PM4Py internally)
+python-dateutil>=2.9.0
+pytz>=2024.1
+
+# Optional: faster XES parsing
+lxml>=5.1.0
